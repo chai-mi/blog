@@ -14,6 +14,7 @@ params:
   DateFormat: "2006 01 02"
   ShowCodeCopyButtons: true
   defaultTheme: dark # auto, light
+  disableScrollToTop: true
 
   homeInfoParams:
     Title: なにこれ！？
