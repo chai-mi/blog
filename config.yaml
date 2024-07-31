@@ -1,7 +1,7 @@
 baseURL: 'https://blog.chaimi.cc/'
 languageCode: 'zh-cn'
 title: '柴米の拾光'
-theme: 'PaperMod'
+theme: 'hugo-PaperMod'
 enableRobotsTXT: true
 
 minify:
