@@ -1,7 +1,8 @@
-baseURL: 'https://blog.chaimi.cc/'
-languageCode: 'zh-cn'
-title: '柴米の拾光'
-theme: 'hugo-PaperMod'
+baseURL: https://blog.chaimi.cc/
+languageCode: zh
+defaultContentLanguage: zh
+title: 柴米の拾光
+theme: hugo-PaperMod
 enableRobotsTXT: true
 
 minify:
