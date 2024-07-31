@@ -12,7 +12,7 @@ params:
   author: chaimi
   DateFormat: "2006 01 02"
   ShowCodeCopyButtons: true
-  # showtoc: true
+  defaultTheme: dark # auto, light
 
   homeInfoParams:
     Title: なにこれ！？
