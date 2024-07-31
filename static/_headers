@@ -1,0 +1,12 @@
+/*
+  Link: <https://umami.chaimi.cc/script.js>; rel=preload; as=script
+  Link: <https://cdn.jsdelivr.net>; rel=preconnect
+
+/assets/*
+  Cache-Control: public, max-age=31556952, immutable
+
+/css/*
+  Cache-Control: public, max-age=86400
+
+/favicon.ico
+  Cache-Control: public, max-age=86400

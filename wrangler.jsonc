@@ -1,0 +1,9 @@
+{
+  "$schema": "https://esm.sh/wrangler/config-schema.json",
+  "name": "chaimi",
+  "compatibility_date": "2026-05-14",
+  "workers_dev": false,
+  "assets": {
+    "directory": "public",
+  },
+}
