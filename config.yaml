@@ -12,6 +12,7 @@ minify:
 
 params:
   author: chaimi
+  description: "柴米的个人博客"
   DateFormat: "2006 01 02"
   ShowCodeCopyButtons: true
   defaultTheme: dark # auto, light
