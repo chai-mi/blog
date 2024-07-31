@@ -1,4 +1,5 @@
 ---
+slug: a-trouble-of-tproxy
 title: 折腾 tproxy 下的一点踩坑
 date: 2023-07-28 14:15:06
 tags: 
@@ -6,7 +7,7 @@ tags:
   - Tproxy
 categories: 
   - 记录
-url: /posts/a-trouble-of-tproxy
+summary: form end user
 ---
 # 起因
 其实早在三天前我就打算写出第一篇博客了，但是由于我国互联网的特殊性，导致安装 hexo 出现了“一点点”小意外。虽然只需要设置一下命令行代理就能搞定

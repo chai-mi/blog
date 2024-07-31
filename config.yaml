@@ -4,6 +4,7 @@ defaultContentLanguage: zh
 title: 柴米の拾光
 theme: hugo-PaperMod
 enableRobotsTXT: true
+enableInlineShortcodes: true
 
 minify:
   disableXML: true
@@ -45,9 +46,7 @@ markup:
     # anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    lineNos: true
-    # noClasses: false
-    style: monokai
+    style: github-dark
 
   goldmark:
     extensions:

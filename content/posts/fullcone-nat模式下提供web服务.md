@@ -1,4 +1,5 @@
 ---
+slug: web-with-fullcone
 title: fullcone-nat 模式下提供 web 服务
 date: 2023-10-15 12:33:46
 tags:
@@ -7,7 +8,7 @@ tags:
   - Fullcone
 categories: 
   - 技巧分享
-url: /posts/web-with-fullcone
+summary: 知道吗，实际上 fullcone 和公网无异
 ---
 老实说，3202 年要提供使用家里云对外提供 web服务，直接用 ipv6 就好了
 

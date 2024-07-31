@@ -1,4 +1,5 @@
 ---
+slug: nginx-for-openwrt
 title: 为 Openwrt 编译 Nginx
 date: 2024-01-19 15:42:29
 tags: 
@@ -7,7 +8,7 @@ tags:
   - Openwrt
 categories: 
   - 记录
-url: /posts/nginx-for-openwrt
+summary: 使用 musl 编译 Nginx
 ---
 # 起因
 由于 openwrt 使用 musl-gcc，无法运行 gcc 编译的程序，需要额外编译

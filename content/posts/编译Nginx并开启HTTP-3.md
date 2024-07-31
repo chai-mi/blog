@@ -1,4 +1,5 @@
 ---
+slug: nginx-with-http3
 title: 编译 Nginx 并开启 HTTP/3
 date: 2024-01-19 15:13:32
 tags: 
@@ -6,7 +7,7 @@ tags:
   - Nginx
 categories: 
   - 记录
-url: /posts/nginx-with-http3
+summary: Nginx 1.25 正式将 HTTP/3 的支持并入主线，尝试手动编译提前尝鲜
 ---
 # 准备工作
 1. [Nginx 源码](https://nginx.org/en/download.html)，解压 tar.gz，目录：`$WORKER/nginx`

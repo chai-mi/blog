@@ -1,4 +1,5 @@
 ---
+slug: watch-youtube-through-http3
 title: http3 直连 YouTube 观影？
 date: 2023-08-29 19:36:29
 tags:
@@ -6,7 +7,7 @@ tags:
   - QUIC
 categories: 
   - 记录
-url: /posts/watch-youtube-through-http3
+summary: form end user
 ---
 # 前言
 老实说，我本不打算写这篇博客的：因为没有推广的价值，它本质是利用了 GFW 的一个漏洞，如果这漏洞被修复，该方法自然失效

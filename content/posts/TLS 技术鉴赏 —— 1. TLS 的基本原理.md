@@ -1,4 +1,5 @@
 ---
+slug: what-is-tls
 title: TLS 技术鉴赏 —— 1. TLS 的基本原理
 date: 2023-08-02 18:26:06
 tags:
@@ -8,8 +9,8 @@ tags:
 categories: 
   - 技术鉴赏
   - TLS
-url: /posts/what-is-tls
 math: true
+summary: 真的会有第二篇吗（）
 ---
 # 前言
 最近一直在看关于网络通信的书，正好趁此博客刚刚开站，打算写一系列的文章。若是没人看，权当作笔记了吧。~~说不定几篇之后就没动力写了~~

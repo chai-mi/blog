@@ -1,14 +1,15 @@
 ---
+slug: hello-scoop
 title: hello! scoop
 date: 2024-05-29 21:28:19
 tags: 
   - Windows
 categories: 
   - 记录
-url: /posts/hello-scoop
+summary: 好吧，到刚刚为止我一直在手动安装 Windows 下任何程序，但我不想再一遍一遍手动升级电脑上的 python、golang、nodejs 了。是时候改变这一切了！
 ---
 
-好吧，到刚刚为止我一直在手动安装 Windows 下任何程序，虽然说可以在安装时一睹官网的风采，但随着软件越来越多管理难度也越来越大，并且我真的不希望我偶尔打开一个软件的时候提示我可更新了。并且，我也不想再一遍一遍手动升级我电脑上的 python、golang、nodejs 了
+好吧，到刚刚为止我一直在手动安装 Windows 下任何程序，虽然说可以在安装时一睹官网的风采，但随着软件越来越多管理难度也越来越大，并且我真的不希望我偶尔打开一个软件的时候提示我可更新了。并且，我也不想再一遍一遍手动升级电脑上的 python、golang、nodejs 了
 
 是时候改变这一切了！
 
