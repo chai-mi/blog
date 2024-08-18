@@ -45,7 +45,9 @@ summary: 使用 musl 编译 Nginx
     --conf-path=/etc/nginx/nginx.conf \
     --prefix=/var/nginx \
     --pid-path=/var/run/nginx.pid \
-    --user=root
+    --user=root \
+    --with-cc-opt="-O2" \
+    --with-ld-opt="-s -static"
 ```
 3. `make`，编译结果会存于`$WORKER/nginx/objs`
 4. 安装（不必须）：`sudo make install`

@@ -37,7 +37,9 @@ summary: Nginx 1.25 正式将 HTTP/3 的支持并入主线，尝试手动编译�
     --with-pcre=../pcre  \
     --with-pcre-jit  \
     --with-zlib=../zlib  \
-    --with-openssl=../libressl
+    --with-openssl=../libressl \
+    --with-cc-opt="-O2" \
+    --with-ld-opt="-s -static"
 ```
 3. `make`，编译结果会存于`$WORKER/nginx/objs`
 4. 安装（不必须）：`sudo make install`
