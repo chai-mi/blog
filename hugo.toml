@@ -1,0 +1,53 @@
+baseURL = 'https://blog.chaimi.cc'
+defaultContentLanguage = 'zh'
+enableInlineShortcodes = true
+enableRobotsTXT = true
+languageCode = 'zh'
+theme = 'hugo-PaperMod'
+title = '柴米の拾光'
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+DateFormat = '2006 01 02' 
+ShowCodeCopyButtons = true 
+author = 'chaimi' 
+defaultTheme = 'dark' # auto, light
+description = '柴米的个人博客' 
+disableScrollToTop = true 
+
+[params.homeInfoParams]
+Content = 'ただ記録だけ。あなたに、私も...'
+Title = 'なにこれ！？'
+
+[params.assets]
+disableHLJS = true # to disable highlight.js
+# disableFingerprinting=true
+apple_touch_icon = '/icon.webp'
+favicon = '/icon.webp'
+# favicon16x16 = '/icon.webp'
+# favicon32x32 = '/icon.webp'
+safari_pinned_tab = '/icon.webp'
+
+[[menu.main]]
+identifier = 'categories'
+name = 'categories'
+url = '/categories/'
+weight = 10
+[[menu.main]]
+identifier = 'tags'
+name = 'tags'
+url = '/tags/'
+weight = 20
+
+[markup.highlight]
+# anchorLineNos=true
+codeFences = true
+guessSyntax = true
+style = 'github-dark'
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = ['$$', '$$']
+inline = ['$', '$']
