@@ -19,7 +19,7 @@ Linux 下，包管理器帮助用户管理一切 bin（~~make install~~好吧，
 虽然我早有耳闻 scoop，但也许是出于惰性，我一直没进行尝试。但是一经上手，熟悉的体验让我非常满意
 
 ## 安装
-```
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
@@ -27,11 +27,18 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ## 使用
 让我们尝试安装 python
-```
+```powershell
 scoop install python
 ```
 你已经安装完成了，如此的省心！
 
+## 常用命令
+```powershell
+# 更新所有软件
+scoop update *
+# 清理旧版本
+scoop cleanup *
+```
 其他功能可 `scoop help` 或在 [scoop 官网](https://scoop.sh) 上查看
 
 # 体验
