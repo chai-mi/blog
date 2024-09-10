@@ -36,12 +36,14 @@ proxy_request_buffering off;
 ### CDN
 [Cloudflare 无法建立双向流](https://community.cloudflare.com/t/streaming-a-request/14724)，因为它无论如何都会缓冲 request.body，在完全读取 body 之前，不会向源服务器发送请求。
 
-这源于一种叫 `slowloris` 攻击，绝大多数 CDN 为了缓解该攻击而对请求主体进行缓冲，以至于无法通过 CDN 建立双向流
+这源于一种叫 [slowloris](https://en.wikipedia.org/wiki/Slowloris_(computer_security)) 攻击，绝大多数 CDN 为了缓解该攻击而对请求主体进行缓冲，以至于无法通过 CDN 建立双向流
 
 > 我并没有测试太多 CDN，也许有的 CDN 忽视了这一问题
 
 ### 编程语言
-大多数编程语言的 HTTP 标准库都将 request.body 视作一个 IO 接口；并且~~自己实现一个流式请求的 HTTP/1.1 封装库并不难~~
+大多数编程语言的 HTTP 标准库都将 request.body/response.body 视作一个 IO 接口，完全可以流式传输
+
+~~并且自己实现一个流式请求的 HTTP/1.1 封装库并不难~~
 
 ### 浏览器
 如上所说，Fetch API 已实现流式传输，自然浏览器不存在兼容性问题
