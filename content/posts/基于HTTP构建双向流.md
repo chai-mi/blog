@@ -7,7 +7,7 @@ tags:
   - HTTP
 categories: 
   - protocol
-summary: 一种使用HTTP产生双向流的思路
+summary: 一种使用 HTTP 产生双向流的思路
 ---
 # 背景
 HTTP 作为最流行的应用层协议，无疑展现了其强大的生命力，无数的基础设施优先为 HTTP 服务，各类编程语言也纷纷具有最完善的框架支持

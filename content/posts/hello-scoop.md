@@ -1,6 +1,6 @@
 ---
 slug: hello-scoop
-title: hello! scoop
+title: Hello! scoop
 date: 2024-05-29 21:28:19
 tags: 
   - Windows
