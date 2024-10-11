@@ -3,7 +3,7 @@ defaultContentLanguage = 'zh'
 enableInlineShortcodes = true
 enableRobotsTXT = true
 languageCode = 'zh'
-theme = 'hugo-PaperMod'
+theme = 'PaperMod'
 title = '柴米の拾光'
 
 [minify]
@@ -27,8 +27,6 @@ disableHLJS = true # to disable highlight.js
 # disableFingerprinting=true
 apple_touch_icon = '/icon.webp'
 favicon = '/icon.webp'
-favicon16x16 = '/icon.webp'
-favicon32x32 = '/icon.webp'
 safari_pinned_tab = '/icon.webp'
 
 [[menu.main]]
