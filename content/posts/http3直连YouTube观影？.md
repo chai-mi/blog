@@ -7,7 +7,7 @@ tags:
   - QUIC
 categories: 
   - 记录
-summary: form end user
+summary: from end user
 ---
 # 前言
 老实说，我本不打算写这篇博客的：因为没有推广的价值，它本质是利用了 GFW 的一个漏洞，如果这漏洞被修复，该方法自然失效
