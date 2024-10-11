@@ -1,4 +1,4 @@
-baseURL = '.'
+baseURL = '/'
 defaultContentLanguage = 'zh'
 enableInlineShortcodes = true
 enableRobotsTXT = true
@@ -11,6 +11,7 @@ disableXML = true
 minifyOutput = true
 
 [params]
+social = true
 DateFormat = '2006 01 02' 
 ShowCodeCopyButtons = true 
 author = 'chaimi' 
@@ -31,12 +32,12 @@ safari_pinned_tab = '/icon.svg'
 
 [[menu.main]]
 identifier = 'categories'
-name = 'categories'
+name = '分类'
 url = '/categories/'
 weight = 10
 [[menu.main]]
 identifier = 'tags'
-name = 'tags'
+name = '标签'
 url = '/tags/'
 weight = 20
 
