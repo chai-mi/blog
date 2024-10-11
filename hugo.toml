@@ -25,9 +25,9 @@ Title = 'なにこれ！？'
 [params.assets]
 disableHLJS = true # to disable highlight.js
 # disableFingerprinting=true
-apple_touch_icon = '/icon.webp'
-favicon = '/icon.webp'
-safari_pinned_tab = '/icon.webp'
+apple_touch_icon = '/icon.svg'
+favicon = '/icon.svg'
+safari_pinned_tab = '/icon.svg'
 
 [[menu.main]]
 identifier = 'categories'
