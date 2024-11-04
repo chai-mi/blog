@@ -51,16 +51,3 @@ HTTP 作为最广泛运用的应用层协议，如今大部分上网行为都依
 
 # cloudflare 如何实现 ECH 保护隐私
 参考 [cloudflare 博客](https://blog.cloudflare.com/encrypted-client-hello)
-
-# ECH 安全性细节
-### 中间件兼容性
-待续
-
-### 避免降级攻击
-待续
-
-### 公钥过期/无效
-待续
-
-# 如何设置我的网络以使用 ECH 保护隐私
-待续
