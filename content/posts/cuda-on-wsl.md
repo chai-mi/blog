@@ -2,6 +2,7 @@
 slug: cuda-on-wsl
 title: 在 WSL 中启用 Cuda
 date: 2025-01-16 14:15:06
+summary: from end user
 ---
 
 Windows 下安装 [nVidia 驱动](https://www.nvidia.com/en-us/drivers/)
