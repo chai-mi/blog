@@ -12,12 +12,12 @@ minifyOutput = true
 
 [params]
 social = true
-DateFormat = '2006 01 02' 
-ShowCodeCopyButtons = true 
-author = 'chaimi' 
-defaultTheme = 'dark' # auto, light
-description = '柴米的个人博客' 
-disableScrollToTop = true 
+DateFormat = '2006/01/02'
+ShowCodeCopyButtons = true
+author = 'chaimi'
+defaultTheme = 'dark'      # auto, light
+description = '柴米的个人博客'
+disableScrollToTop = true
 
 [params.homeInfoParams]
 Content = 'ただ記録だけ。あなたに、私も...'
