@@ -8,7 +8,7 @@ math: true
 
 ## 用法
 
-在 `./layouts/partials/math.html` 中填入如下内容，以使用 `katex` 进行渲染
+在 `./layouts/_partials/math.html` 中填入如下内容，以使用 `katex` 进行渲染
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
@@ -27,7 +27,7 @@ math: true
 </script>
 ```
 
-在 `./layouts/partials/head.html` 添加如下内容（可能会覆盖你的主题）
+在 `./layouts/_partials/extend_head.html` 添加如下内容
 
 ```html
 {{ if .Param "math" }}

@@ -1,0 +1,13 @@
+<link rel="manifest" href="/manifest.json" />
+<script
+  defer
+  src="https://instant.page/5.2.0"
+  type="module"
+  integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"
+></script>
+<script
+  defer
+  src="https://umami.chaimi.cc/script.js"
+  data-website-id="0f9bd29e-a788-421e-be2c-75a75320789c"
+></script>
+{{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
