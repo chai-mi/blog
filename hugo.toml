@@ -50,3 +50,8 @@ weight = 20
 codeFences = true
 guessSyntax = true
 style = 'github-dark'
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+delimiters.block = [['$$', '$$']]
+delimiters.inline = [['$', '$']]

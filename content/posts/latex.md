@@ -35,6 +35,17 @@ math: true
 {{ end }}
 ```
 
+在 `./hugo.toml` 添加如下内容
+
+```toml
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['$', '$']]
+```
+
 最后在你想要启用公式渲染的文章上加入 `math: true` 的元信息
 
 ```markdown
@@ -91,9 +102,6 @@ math: true
 
 ### 多行公式
 
-> [!IMPORTANT]
-> 由于 markdown 会将 "\\\\" 识别为 "\\"，因此当你需要两个反斜杠时需要 "\\\\\\"
-
 #### 方程组
 
 使用 & 对齐
@@ -101,7 +109,7 @@ math: true
 ```markdown
 f(x)=
 \begin{cases}
-1,& x \geq 0 \\\
+1,& x \geq 0 \\
 114514,& x < 0
 \end{cases}
 ```
@@ -109,7 +117,7 @@ f(x)=
 $$
 f(x)=
 \begin{cases}
-1,& x \geq 0 \\\
+1,& x \geq 0 \\
 114514,& x < 0
 \end{cases}
 $$
@@ -118,16 +126,16 @@ $$
 
 ```markdown
 \begin{bmatrix}
-0      & \cdots & 0      \\\
-\vdots & \ddots & \vdots \\\
+0      & \cdots & 0      \\
+\vdots & \ddots & \vdots \\
 0      & \cdots & 0
 \end{bmatrix}
 ```
 
 $$
 \begin{bmatrix}
-0      & \cdots & 0      \\\
-\vdots & \ddots & \vdots \\\
+0      & \cdots & 0      \\
+\vdots & \ddots & \vdots \\
 0      & \cdots & 0
 \end{bmatrix}
 $$
@@ -138,15 +146,15 @@ $$
 
 ```markdown
 \begin{aligned}
-f(x) & = (m+n)^2 \\\
-     & = m^2+2mn+n^2 \\\
+f(x) & = (m+n)^2 \\
+     & = m^2+2mn+n^2 \\
 \end{aligned}
 ```
 
 $$
 \begin{aligned}
-f(x) & = (m+n)^2 \\\
-     & = m^2+2mn+n^2 \\\
+f(x) & = (m+n)^2 \\
+     & = m^2+2mn+n^2 \\
 \end{aligned}
 $$
 
