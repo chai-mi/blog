@@ -10,21 +10,38 @@ math: true
 
 在 `./layouts/_partials/math.html` 中填入如下内容，以使用 `katex` 进行渲染
 
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+> [!IMPORTANT]
+> 你应该前往 [katex](https://katex.org/docs/autorender) 官网获取最新版本的链接
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$", right: "$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
+  integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"
+  integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6"
+  crossorigin="anonymous"
+></script>
+<script type="module">
+  import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.mjs";
+  renderMathInElement(document.body, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true },
+      { left: "$", right: "$", display: true },
+    ],
+  });
 </script>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/copy-tex.mjs"
+  integrity="sha384-bVEnwt0PtX+1EuJoOEcm4rgTUWvb2ILTdjHfI1gUe/r5fdqrTcQaUuRdHG2DciuQ"
+  crossorigin="anonymous"
+></script>
+
 ```
 
 在 `./layouts/_partials/extend_head.html` 添加如下内容
