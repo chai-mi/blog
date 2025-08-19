@@ -51,6 +51,9 @@ codeFences = true
 guessSyntax = true
 style = 'github-dark'
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [markup.goldmark.extensions.passthrough]
 enable = true
 delimiters.block = [['$$', '$$']]

@@ -1,0 +1,58 @@
+:root {
+  --borderColor-accent-emphasis: rgb(9, 105, 218);
+  --borderColor-success-emphasis: rgb(35, 134, 54);
+  --borderColor-done-emphasis: rgb(137, 87, 229);
+  --borderColor-attention-emphasis: rgb(158, 106, 3);
+  --borderColor-danger-emphasis: rgb(218, 54, 51);
+}
+
+p.alert-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+blockquote.alert-note {
+  border-left-color: var(--borderColor-accent-emphasis);
+  fill: var(--borderColor-accent-emphasis);
+}
+
+blockquote.alert-note > p.alert-heading {
+  color: var(--borderColor-accent-emphasis);
+}
+
+blockquote.alert-tip {
+  border-left-color: var(--borderColor-success-emphasis);
+  fill: var(--borderColor-success-emphasis);
+}
+
+blockquote.alert-tip > p.alert-heading {
+  color: var(--borderColor-success-emphasis);
+}
+
+blockquote.alert-important {
+  border-left-color: var(--borderColor-done-emphasis);
+  fill: var(--borderColor-done-emphasis);
+}
+
+blockquote.alert-important > p.alert-heading {
+  color: var(--borderColor-done-emphasis);
+}
+
+blockquote.alert-warning {
+  border-left-color: var(--borderColor-attention-emphasis);
+  fill: var(--borderColor-attention-emphasis);
+}
+
+blockquote.alert-warning > p.alert-heading {
+  color: var(--borderColor-attention-emphasis);
+}
+
+blockquote.alert-caution {
+  border-left-color: var(--borderColor-danger-emphasis);
+  fill: var(--borderColor-danger-emphasis);
+}
+
+blockquote.alert-caution > p.alert-heading {
+  color: var(--borderColor-danger-emphasis);
+}

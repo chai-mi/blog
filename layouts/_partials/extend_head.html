@@ -1,13 +1,30 @@
-<link rel="manifest" href="/manifest.json" />
-<script
-  defer
-  src="https://instant.page/5.2.0"
-  type="module"
-  integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"
-></script>
 <script
   defer
   src="https://umami.chaimi.cc/script.js"
   data-website-id="0f9bd29e-a788-421e-be2c-75a75320789c"
 ></script>
+
+<script type="module">
+  document.querySelectorAll("a").forEach((a) => {
+    if (
+      a.host !== window.location.host &&
+      !a.getAttribute("data-umami-event")
+    ) {
+      a.setAttribute("data-umami-event", "outbound-link-click");
+      a.setAttribute("data-umami-event-url", a.href);
+    }
+  });
+</script>
+
 {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
+
+{{ if .Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "dark" });
+</script>
+{{ end }}
+
+{{ if .Store.Get "hasAlert" }}
+<link rel="stylesheet" type="text/css" href="/css/alert.css" />
+{{ end }}
